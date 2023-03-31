@@ -4,11 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Momentum</title>
   </head>
   <body>
-    <h1 id="title" class="hell">Grab me!!</h1>
-    <script src="app.js"></script>
+    <form class="login-form hidden">
+      <input
+      required
+      maxlength="10"
+      type="text"
+      placeholder="What is your name?"
+      />
+      <input type="submit">Log In</input>
+    </form>
+    <h2 class="clock">00 : 00 : 00</h2>
+    <h1 class="hidden greeting"></h1>
+    <form class="todo-form">
+      <input type="text"/>
+      <input type="submit" value="add">
+    </form>
+    <ul class="todo-list">
+    </ul>
+
+    <div class="quote">
+      <span class="quote_text"></span>
+      <span class="quote_author"></span>
+    </div>  
+
+    <!-- import js files -->
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/backgrounds.js"></script>
+    <script src="js/todo.js"></script>
   </body>
 </html>
